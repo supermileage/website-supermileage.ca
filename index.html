@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UBC Supermileage</title>
+
+    <!-- refs / links -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class = "wrapper">
+
+    <!-- top nav bar thingy -->
+    <section class = "top-nav">
+        <ul class = "top-nav-links">
+            <li class = "nav-item"><a href = "index.html" class="nav-link active">HOME</a></li>
+            <li class = "nav-item"><a href = "projects.html" class="nav-link">DIVISIONS</a></li>
+            <li class = "nav-item"><a href = "recruit.html" class="nav-link">JOIN US</a></li>
+            <li class = "nav-item"><a href = "sponsor.html" class="nav-link">SPONSORSHIPS</a></li>
+            <li class = "nav-item"><a href = "contact.html" class="nav-link">CONTACT</a></li>
+            
+        </ul>
+    </section>
+
+    <!-- current events -->
+    <!-- <div class="marquee-wrap">
+        <div class="marquee">
+            <div class="marquee-group">
+            <span>NOW RECRUITING!</span>
+            <span>NOW RECRUITING!</span>
+            <span>NOW RECRUITING!</span>
+            <span>NOW RECRUITING!</span>
+            <span>NOW RECRUITING!</span>
+            </div>
+            <div class="marquee-group" aria-hidden="true">
+            <span>NOW RECRUITING!</span>
+            <span>NOW RECRUITING!</span>
+            <span>NOW RECRUITING!</span>
+            <span>NOW RECRUITING!</span>
+            <span>NOW RECRUITING!</span>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- loading animation -->
+    <div class = "loading">
+        <div class = "loading-logo">
+            <div class="grey"></div>
+            <div class="blue"></div>
+        </div>
+    </div>
+
+
+    <!-- big main page -->
+
+    <section class = "big-page">
+        <div id = "big-header">
+            <video playsinline autoplay muted loop id="bgvid">
+                <source src="assets/supermileage_banner_video.mp4" type="video/mp4">
+            </video>
+
+            <h1>IN THE PURSUIT OF</h1>
+            <h2>EFFICIENCY</h2>
+            <!-- <p>(insert our coolest video here)</p> -->
+        </div>
+    </section>
+
+    <script>
+        const divEl = document.querySelector(".big-page");
+        divEl.addEventListener("pointermove", (ev) => {
+            divEl.style.setProperty("--x", ev.clientX);
+            divEl.style.setProperty("--y", ev.clientY);
+        });
+    </script>
+
+    <div class = "bigmission">
+        <section class = "header-container">
+            <div class = "about-bg">
+                <div class = "about-text"> <!-- holds the text & links-->
+                    <h1>OUR MISSION</h1>
+                    <p>UBC Supermileage is a student engineering and design team that works to develop some of the <strong>most efficient vehicles humanity has ever built.</strong> We once held the world record, and we are working to win it back! <br><br>We provide a learning experience like none other, where students get to design, build and optimize vehicles with gasoline, battery electric, and hydrogen powertrains. Whether you are a student who wants to participate, or a sponsor who wants to be part of something great, we are excited to work with you!</p>
+                    <nav class = "home-links">
+                        <a href = "projects.html" class = "nav-button">OUR WORK</a>
+                        <a href = "#join" class = "nav-button">JOIN US!</a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <section class = "info">
+            <div class = "about-section">
+                <div class = "about">
+                    <h1>est. 2001</h1>
+                    <p>UBC Supermileage was founded in 2001 by UBC engineering students Rob Mahaffey and Brian Jung. The goal of the team was to develop a highly fuel-efficient car to compete in the SAE Supermileage competition while providing an opportunity for student engineers to apply classroom theories to real-world problems. <br><br>The team started out small, with 6 students doing most of the organization, fundraising, design, fabrication, and assembly of the vehicle. The team’s small size compared to other UBC student teams did not prevent it from being successful at the competition, and in fact UBC Supermileage achieved a first-place position 4 years in a row, and the team record of 3145 mpg in 2006.</p>
+                </div>
+                <div class = "about">
+                    <h1>Record-<br>Breakers</h1>
+                    <p>UBC Supermileage beat our own record to build the <strong>world record for the most efficient gasoline powered vehicle built anywhere in the world, by anyone—</strong>a title one of our vehicles held for five consecutive years. <br><br>Our 70-student team has demonstrated UBC students are capable of great things, and we continue to push the envelope by bringing electric and hydrogen vehicles into the picture, alongside ambitious technical projects like custom engine blocks, custom FOC motor controllers, and new manufacturing methods for carbon fiber aerodynamics.
+                    </p>
+                </div>
+            </div>
+
+            <div class = "info-all">
+                <div class = "fact membercount">
+
+                    <div class = "fact-text">
+                        <h1 class = "fact-title-top">70</h1>
+                        <h1 class = "fact-title-bot">MEMBERS</h1>
+                    </div>
+
+                    <div class = "fact-image">
+                        <div class = "fact-img">
+                            <img src = "assets/group_photo_small.webp">
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+            <div class = "about-pic">
+                <div class = "inform pic2">
+                    <div class = "thepic">
+                        <img src = "assets/nicepic_yay.webp">
+                    </div>
+                    <div class = "thetext">
+                        <h2>RANKED FIRST</h2>
+                        <h1>5 TIMES</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class = "three">
+            <h1>THE<br>COMPETITION</h1>
+            <p>Each year we bring our vehicles, drivers, and a support team to the Indy Motor Speedway in Indianapolis, USA to compete in the Shell Eco-Marathon (SEM). There, we compete against other schools and race our combustion engine, electric, and hydrogen cars in a contest of efficiency. Vehicles are subject to a series of requirements and tests, which are evaluated as part of a technical inspection. From there, the race is on, and the most efficient vehicle wins! Each powertrain type competes in its own category, and there are different categories for larger (Urban) vehicles and smaller (Prototype) vehicles as well.</p>
+        </div>
+
+        <div class = "wow"></div>
+
+        <div class = "the-cars">
+            <div class = "cars">
+
+                <div class = "urban car-container">
+                    <div class = "car-text">
+                        <h1>URBAN</h1>
+                    </div>
+                    <div class = "urban-pic pic">
+                        <img src = "assets/urban_pic_small.webp">
+                    </div>
+                </div>
+
+                <div class = "gp car-container">
+                    <div class = "car-text">
+                        <h1>GAS <br>PROTOTYPE</h1>
+                    </div>
+                    <div class = "gp-pic pic">
+                        <img src = "assets/gp_pic_small.webp">
+                    </div>
+                </div>
+
+                <div class = "fcp car-container">
+                    <div class = "car-text">
+                        <h1>FUEL CELL PROTOTYPE</h1>
+                    </div>
+                    <div class = "fcp-pic pic">
+                        <img src = "assets/fcp_pic_small.webp">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <section class = "sponsors_list">
+        <div class = "text sponsors_desc">
+            <h1>OUR SPONSORS</h1>
+            <p>Thank you to our sponsors for supporting us! </p>
+        </div>
+    </section>
+
+    <div class = "sponsors-grid">
+        <div class = "plat spons">
+            <h1>PLATINUM TIER</h1>
+            <div class = "spons-icons">
+                <img src = "assets/dff.png">
+                <img src = "assets/UBCPAF.png">
+            </div>
+        </div>
+        <div class = "gold spons">
+            <h1>GOLD TIER</h1>
+            <div class = "spons-icons">
+                <img src = "assets/TransoftSolutions.png">
+                <img src = "assets/infrastructuresafetysolutions.png">
+            </div>
+        </div>
+        <div class = "silver spons">
+            <h1>SILVER TIER</h1>
+            <div class = "spons-icons">
+                <img src = "assets/UBCMECH.png">
+                <img src = "assets/SCCBC.png">
+                <img src = "assets/UBCAMS.jpg">
+                <img src = "assets/SolasEnergy.png">
+                <img src = "assets/Zaber.jpg">
+            </div>
+        </div>
+        <div class = "bronze spons">
+            <h1>BRONZE TIER</h1>
+            <div class = "spons-icons">
+                <img src = "assets/shell.png">
+                <img src = "assets/HTECss.png">
+                <img src = "assets/WalterGageMemorialFund.png">
+                <img src = "assets/UBCECE.jpg">
+                <img src = "assets/HorizonEducational.png">
+            </div>
+        </div>
+        <div class = "select spons">
+            <h1>SELECT TIER</h1>
+            <div class = "spons-icons">
+                <img src = "assets/SAEBC2.jpg">
+                <img src = "assets/coretool.png">
+                <img src = "assets/CNCmanu.png">
+                <img src = "assets/AVL.png">
+                <img src = "assets/enepaq.png">
+                <img src = "assets/hy-fcell.png">
+            </div>
+        </div>
+    </div>
+
+    <section class = "footer">
+        <div class = "address footer-section">
+            <h1>Mailing Address</h1>
+            <p>UBC Supermileage Team
+            University of British Columbia
+            2054-6250 Applied Science Lane
+            Vancouver, BC, Canada V6T 1Z4</p>
+        </div>
+        <div class = "contactf footer-section">
+            <h1>Contact Information</h1>
+            <p><strong>General inquiries:</strong> captain@supermileage.ca<br>
+            <strong>Questions about applying?</strong> captain@supermileage.ca<br>
+            <strong>Sponsorship:</strong> admin@supermileage.ca</p>
+        </div>
+        <div class = "socials footer-section">
+            <h1>Social Media</h1>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/ubcsupermileage/" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/ubc-supermileage/about/" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://www.youtube.com/user/UBCSupermileageTeam" target="_blank" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<div class="custom-cursor"></div>
+</body>
+</html>

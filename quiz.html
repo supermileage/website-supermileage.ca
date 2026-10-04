@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UBC Supermileage Quiz</title>
+
+    <!-- refs / links -->
+    <link rel="stylesheet" href="quiz-style.css">
+    <script src="quiz-script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="quiz-home" id="quiz-home">
+        <div class="home-text">
+            <h1 class="big-big">UBC Supermileage's<br>Division Assignment Quiz!</h1>
+            <p>Take this short quiz to find out which division suits you best.
+            <br><br>
+            Please note that this quiz is for fun only, and that you should look into each division to apply to the ones that interest you most.
+            </p>
+
+            <div class="button" id="start-btn">
+                <h1>START!</h1>
+            </div>
+        </div>
+    </section>
+
+    <div class="quiz-container hidden" id="quiz">
+        <h1 id="question"></h1>
+        <div id="options" class="options-container">
+            <button class = "option">
+            </button>
+        </div>
+    </div>
+
+    <div class="quiz-container hidden" id="result-container">
+        <h2>Your result:</h2>
+        <h1 id="result-type"></h1>
+        <p id="result-desc"></p>
+        <p class = "result-text">
+            Thank you for doing the quiz! Check out our website to learn about the different divisions, and apply to UBC Supermileage today to make your quiz results a reality :)
+        </p>
+        
+
+        <a class = "button" href = "https://docs.google.com/forms/d/e/1FAIpQLSdQLK8xjKJoZOEovQBvFXWPMSo9zDRGSdRxSlVOaEsegcvmHw/viewform?usp=header" target="_blank">
+            <h1>APPLY NOW!</h1>
+        </a>
+        <button onclick="location.reload()" class = "button">
+            <h1>RETAKE QUIZ</h1>
+        </button>
+    </div>
+
+
+</body>
+</html>
